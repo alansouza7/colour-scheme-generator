@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+
+        <form class="form" id="form">
+            <input name="seed" id="seed" type="color">
+            <select name="scheme" id="scheme">
+                <option>Select a scheme</option>
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button type="submit">Get colour scheme</button>
+        </form>
+
+        <main id="colours" class="colours grid">
+        </main>
+
+        <footer id="names" class="names grid">
+        </footer>
+
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <p><i class="fa-regular fa-circle-check"></i> Copied to your clipboard!</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
